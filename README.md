@@ -16,5 +16,5 @@ A catalogue for the Star Wars movies, consuming a [Rest API](https://swapi.dev/)
 
 ## Future implementations/Next steps
 - Filter by release, chronological and fan-based orders; 
-- Filter by trilogy (prequel and sequel);
+- Filter by trilogy (prequels and sequels);
 - Consumption of a[ visual data API](https://starwars-visualguide.com/#/films?page=1).
