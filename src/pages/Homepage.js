@@ -1,24 +1,28 @@
 import React from 'react';
 import Particles from 'react-tsparticles';
 import { loadFull } from 'tsparticles';
+import { useNavigate } from 'react-router-dom';
 
 import '../pages/Homepage.css';
 import logo from '../assets/logo.png';
 
 const Homepage = () => {
-    const loadCatalogue = () => {
-      window.location = '/Catalogue';
-      console.log('clicked')
-    }
+  const navigate = useNavigate();
 
+  const loadCatalogue = () => {
+    navigate('/Catalogue');
+    console.log('clicked')
+  }
 
-   const particlesInit = async (main) => {
-     console.log(main);
-     await loadFull(main);
-   };
-   const particlesLoaded = (container) => {
-     console.log(container);
-   };
+  const particlesInit = async (main) => {
+    console.log(main);
+    await loadFull(main);
+  };
+
+  const particlesLoaded = (container) => {
+    console.log(container);
+  };
+
 
   return (
     <section className="home">
