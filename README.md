@@ -10,7 +10,7 @@
 
 ## About
 
-A catalogue for the Star Wars movies, consuming a [Rest API](https://swapi.dev/) with React. The goal is to display data about the SW Universe covering characters, planets, films and more. And a special feature: being able filter an order in which to watch the movies by. 
+A catalogue for the Star Wars movies, consuming a [Rest API](https://swapi.dev/) with React. The goal is to display data about the SW Universe covering characters, planets, films and more. And a special feature: rendering the movies in special orders. 
 
 ## Future implementations/Next steps
 - Filter by release, chronological and fan-based orders; 
