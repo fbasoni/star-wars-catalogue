@@ -1,9 +1,10 @@
 import '../pages/Catalogue.css';
 
-import Card from "../components/Card";
-import Header from "../components/Header";
-import { getFilms } from "../data/data";
-import { useState, useEffect } from "react";
+import Card from '../components/Card';
+import Header from '../components/Header';
+import Footer from '../components/Footer'
+import { getFilms } from '../data/data';
+import { useState, useEffect } from 'react';
 
 const Catalogue = () => {
   const [films, setFilms] = useState([]);
@@ -17,16 +18,19 @@ const Catalogue = () => {
   }, []);
 
   return (
-    <section className="catalogue">
-      <div className="header">
-        <Header></Header>
-      </div>
-      <div className="cards">
-        {films.map((film) => (
-          <Card key={film.episode_id}>{film}</Card>
-        ))}
-      </div>
-    </section>
+    <>
+      <section className="catalogue">
+        <div className="header">
+          <Header></Header>
+        </div>
+        <div className="cards">
+          {films.map((film) => (
+            <Card key={film.episode_id}>{film}</Card>
+          ))}
+        </div>
+      </section>
+      <Footer></Footer>
+    </>
   );
 };
 

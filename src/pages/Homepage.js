@@ -17,7 +17,7 @@ const Homepage = () => {
     await loadFull(main);
   };
 
-  const particlesLoaded = (container) => {
+  const particlesLoaded = () => {
   };
 
 

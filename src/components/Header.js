@@ -4,7 +4,7 @@ import { BsSearch } from 'react-icons/bs'
 
 import styles from './Header.module.css'
 
-const Header = () => {
+const Header = ({onClick}) => {
   return (
     <div className={styles.header}>
       <h1 className={styles.headerTitle}>Starwars Catalogue</h1>
@@ -16,7 +16,7 @@ const Header = () => {
       </div>
       <form className={styles.searchContainer}>
           <input type="text" placeholder="Search..." className={styles.searchInput}></input>
-          <BsSearch className={styles.searchIcon}></BsSearch>
+          <BsSearch className={styles.searchIcon} onClick={onClick}></BsSearch>
       </form>
     </div>
   );
