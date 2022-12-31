@@ -4,7 +4,6 @@ export const getFilms = async () => {
   return await fetch(url)
     .then((response) => response.json())
     .then((data) => {
-      console.log(data);
       return data;
-    });
+    }).catch(err => console.log(err));
 };

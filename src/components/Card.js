@@ -1,15 +1,17 @@
 import styles from './Card.module.css';
+import { BsPlusSquareFill } from 'react-icons/bs'
 
-function Card({imageURL, name, releaseDate}) {
+const Card = ({children, onClick}) => {
   return (
-  <div className={styles.movieCard}>
-    <img src={imageURL} alt={name} className={styles.posterImage}></img>
-    <div className={styles.movieInfos}>
-      <h1 className={styles.movieTitle}>{name}</h1>
-      <p className={styles.movieReleaseDate}>{releaseDate}</p>
+    <div className={styles.movieCard}>
+      <h1 className={styles.movieTitle}>{children.title}</h1>
+
+      <div className={styles.infoBox}>
+        <div className={styles.description}>{children.opening_crawl}</div>
+      </div>
+        <BsPlusSquareFill className={styles.plusSign} onClick={onClick}></BsPlusSquareFill>
     </div>
-  </div>
-  )
+  );
 }
 
 export default Card

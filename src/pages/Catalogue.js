@@ -1,29 +1,33 @@
-import Card from '../components/Card';
-import Header from '../components/Header'
-import { getFilms } from '../data/data';
-import { useState, useEffect } from 'react';
+import '../pages/Catalogue.css';
+
+import Card from "../components/Card";
+import Header from "../components/Header";
+import { getFilms } from "../data/data";
+import { useState, useEffect } from "react";
 
 const Catalogue = () => {
   const [films, setFilms] = useState([]);
 
   useEffect(() => {
     getFilms().then((films) => {
-      console.log(films)
-      setFilms(films)
-    })
-  }, [])
+      console.log(films.results);
 
+      setFilms(films.results);
+    });
+  }, []);
 
   return (
     <section className="catalogue">
       <div className="header">
-       <Header></Header>
+        <Header></Header>
       </div>
       <div className="cards">
-        <Card></Card>
+        {films.map((film) => (
+          <Card key={film.episode_id}>{film}</Card>
+        ))}
       </div>
     </section>
   );
-}
+};
 
 export default Catalogue;

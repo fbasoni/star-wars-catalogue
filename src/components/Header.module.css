@@ -1,0 +1,52 @@
+.header {
+  height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 4rem 0 10rem 0;
+  background: black;
+}
+
+.headerNav {
+  display: flex;
+  gap: 3rem;
+}
+
+.headerTitle {
+  font-family: 'Days One';
+  color: gold;
+  font-size: 3rem;
+}
+
+.navLink {
+  text-decoration: none;
+  color: white;
+  background: linear-gradient(to right, gold, rgb(0, 0, 0));
+  background-repeat: no-repeat;
+  background-size: 0 100%;
+  transition: background-size 1s 0s;
+}
+
+.navLink:hover {
+  background-size: 100% 100%;
+  border-right: transparent; 
+  color: black; 
+  padding: 0 0.7rem 0 0.7rem; 
+}
+
+.searchContainer {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.searchIcon {
+  color: gold;
+  font-size: 1.5rem;
+}
+.searchInput {
+  height: 2vh;
+  width: 10vw;
+}

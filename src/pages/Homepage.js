@@ -11,16 +11,13 @@ const Homepage = () => {
 
   const loadCatalogue = () => {
     navigate('/Catalogue');
-    console.log('clicked')
   }
 
   const particlesInit = async (main) => {
-    console.log(main);
     await loadFull(main);
   };
 
   const particlesLoaded = (container) => {
-    console.log(container);
   };
 
 

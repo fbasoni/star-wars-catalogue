@@ -1,6 +1,37 @@
 .movieCard {
-  height: 30vh;
-  background: rgb(173, 156, 156);
+  height: 49vh;
+  background: black;
   border-radius: 15px;
-  width: 20vw;
+  width: 25vw;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2rem 0 2rem;
+}
+
+.infoBox {
+  height: 35vh;
+  background: url('../../src/assets/sw-bg.png');
+  background-repeat: no-repeat;
+  background-size:cover;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.description {
+  opacity: 100%;
+  font-size: 20px;
+}
+
+.movieTitle {
+  font-size: 28px;
+  color: gold;
+}
+
+.plusSign {
+  padding: 1.6rem 0 1.6rem 0;
+  color: gold;
+  font-size: 30px;
 }
