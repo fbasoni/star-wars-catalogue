@@ -8,7 +8,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0 2rem 0 2rem;
+  padding: 0 1rem 4rem 1rem;
 }
 
 .infoBox {
@@ -27,12 +27,12 @@
 
 .movieTitle {
   font-size: 28px;
-  color: gold;
+  color: #FCBF06;
 }
 
 .plusSign {
   padding: 1.6rem 0 1.6rem 0;
-  color: gold;
+  color: #FCBF06;
   font-size: 30px;
 }
 

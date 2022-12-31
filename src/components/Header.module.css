@@ -4,7 +4,7 @@
   flex-direction: column;
   align-items: center;
   gap: 2rem;
-  padding: 4rem 0 10rem 0;
+  padding: 0 0 15rem 0;
   background: black;
 }
 
@@ -13,10 +13,9 @@
   gap: 3rem;
 }
 
-.headerTitle {
-  font-family: 'Days One';
-  color: gold;
-  font-size: 3rem;
+.mainLogo {
+  height: 35vh;
+  width: 20vw;
 }
 
 .navLink {
@@ -40,11 +39,6 @@
   gap: 1.5rem;
   align-items: center;
   justify-content: center;
-}
-
-.searchIcon {
-  color: gold;
-  font-size: 1.5rem;
 }
 
 .searchIcon:hover {

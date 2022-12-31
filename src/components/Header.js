@@ -1,12 +1,12 @@
 import { Link } from 'react-router-dom';
-
+import logo from '../assets/Catalogue.gif'
 import styles from './Header.module.css'
 
 const Header = () => {
 
   return (
     <nav className={styles.header}>
-      <h1 className={styles.headerTitle}>Starwars Catalogue</h1>
+      <img src={logo} className={styles.mainLogo} alt="logo"></img>
       <div className={styles.headerNav}>
         <Link className={styles.navLink} to="/Films">Films</Link>
         <Link className={styles.navLink} to="/Planets">Planets</Link>
