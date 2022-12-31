@@ -12,5 +12,9 @@
 
 ## About
 
-A movie catalogue for the Star Wars Trilogy, consuming a [Rest API](https://swapi.dev/) with React. The goal is to display data on the trilogy covering characters, planets, films and more. And a special feature: being able filter an order in which to watch the movies by. 
+A catalogue for the Star Wars movies, consuming a [Rest API](https://swapi.dev/) with React. The goal is to display data about the SW Universe covering characters, planets, films and more. And a special feature: being able filter an order in which to watch the movies by. 
 
+## Future implementations/Next steps
+- Filter by release, chronological and fan-based orders; 
+- Filter by trilogy (prequel and sequel);
+- Consumption of a[ visual data API](https://starwars-visualguide.com/#/films?page=1).
