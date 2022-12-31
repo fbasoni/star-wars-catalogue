@@ -5,8 +5,11 @@ import Header from '../components/Header';
 import Footer from '../components/Footer'
 import { getFilms } from '../data/data';
 import { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
+
 
 const Catalogue = () => {
+  const navigate = useNavigate();
   const [films, setFilms] = useState([]);
 
   useEffect(() => {
@@ -17,6 +20,11 @@ const Catalogue = () => {
     });
   }, []);
 
+  const handleOnClick = () => {
+    navigate('/trailers')
+  }
+
+
   return (
     <>
       <section className="catalogue">
@@ -25,7 +33,7 @@ const Catalogue = () => {
         </div>
         <div className="cards">
           {films.map((film) => (
-            <Card key={film.episode_id}>{film}</Card>
+            <Card key={film.episode_id} onClick={handleOnClick}>{film}</Card>
           ))}
         </div>
       </section>

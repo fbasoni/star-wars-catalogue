@@ -1,0 +1,11 @@
+.movieCard {
+  background: black;
+  border-radius: 15px;
+  width: 15vw;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+  flex-wrap: wrap;
+}

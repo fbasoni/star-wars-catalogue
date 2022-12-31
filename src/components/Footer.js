@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <>
       <div className={styles.footer}>
-        <p className={styles.footerTitle}>Starwars Catalogue</p>
+        <p className={styles.footerTitle}>Star Wars Catalogue</p>
         <div className={styles.socials}>
           <div className={styles.footerNav}>
             <Link to="https://www.linkedin.com/in/fabianybasoni/">
@@ -21,7 +21,6 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className={styles.afterFooter}></div>
     </>
   );
 };
