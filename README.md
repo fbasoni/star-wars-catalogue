@@ -10,9 +10,8 @@
 
 ## About
 
-A catalogue for the Star Wars movies, consuming a [Rest API](https://swapi.dev/) with React. The goal is to display data about the SW Universe covering characters, planets, films and more. And an extra feature: rendering the movies in special order. 
+Star Wars catalogue application developed with an [API](https://swapi.dev/) consumption and with React. The goal is to display data about the SW Universe covering characters, planets, films and more. And an extra feature: rendering the movies in special order. 
 
 ## Future implementations
 - Filter by release, chronological and fan-based orders; 
-- Filter by trilogy (prequels and sequels);
 - Consumption of a[ visual data API](https://starwars-visualguide.com/#/films?page=1).
