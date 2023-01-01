@@ -1,9 +1,10 @@
-import '../pages/Catalogue.css';
+import '../Catalogue/Catalogue.css';
 
-import Card from '../components/Card';
-import Header from '../components/Header';
-import Footer from '../components/Footer'
-import { getFilms } from '../data/data';
+import Card from '../../components/Card/Films/Card';
+import Header from '../../components/Header/Header';
+import Footer from '../../components/Footer/Footer'
+
+import { getFilms } from '../../data/data';
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 

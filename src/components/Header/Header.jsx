@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
-import logo from '../assets/Catalogue.gif'
-import styles from './Header.module.css'
+import logo from '../../assets/Catalogue.gif';
+import styles from './Header.module.css';
 
 const Header = () => {
 
@@ -11,7 +11,7 @@ const Header = () => {
         <Link className={styles.navLink} to="/catalogue">Films</Link>
         <Link className={styles.navLink} to="/planets">Planets</Link>
         <Link className={styles.navLink} to="/characters">Characters</Link>
-        <Link className={styles.navLink} to="/vehicles">Vehicles</Link>
+        <Link className={styles.navLink} to="/spaceships">Spaceships</Link>
       </div>
     </nav>
   );

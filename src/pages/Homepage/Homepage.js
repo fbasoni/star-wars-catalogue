@@ -3,8 +3,8 @@ import Particles from 'react-tsparticles';
 import { loadFull } from 'tsparticles';
 import { useNavigate } from 'react-router-dom';
 
-import '../pages/Homepage.css';
-import logo from '../assets/logo.png';
+import '../Homepage/Homepage.css';
+import logo from '../../assets/logo.png';
 
 const Homepage = () => {
   const navigate = useNavigate();

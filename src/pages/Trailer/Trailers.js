@@ -1,8 +1,8 @@
-import YoutubeEmbed from '../components/YoutubeEmbed';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
+import YoutubeEmbed from '../../components/YoutubeEmbed/YoutubeEmbed';
+import Header from '../../components/Header/Header';
+import Footer from '../../components/Footer/Footer';
 
-import '../pages/Trailer.css';
+import '../Trailer/Trailer.css';
 
 const Trailers = () => {
   return (
