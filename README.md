@@ -1,6 +1,6 @@
 # Star Wars catalogue
 <p align="center">
-<img alt="readme-logo" src="./src/assets/logo.png" height="200" width="200">
+<img alt="readme-logo" src="./src/assets/Catalogue.gif" height="200" width="200">
 </p>
 <p align="center">
 <code><img alt="css3" height="23" src="https://camo.githubusercontent.com/2435c2a64789b8a71c701a1a593b4a6e6869789bfb0626e515dc2a6b6dffa6c5/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f2d435353332d3135373242363f7374796c653d666c61742d737175617265266c6f676f3d63737333"></code>
