@@ -10,7 +10,7 @@ const Homepage = () => {
   const navigate = useNavigate();
 
   const loadCatalogue = () => {
-    navigate('/Catalogue');
+    navigate('/films');
   }
 
   const particlesInit = async (main) => {

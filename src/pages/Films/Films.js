@@ -1,4 +1,4 @@
-import '../Catalogue/Catalogue.css';
+import './Films.css';
 
 import Card from '../../components/Card/Films/Card';
 import Header from '../../components/Header/Header';
@@ -9,7 +9,7 @@ import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 
-const Catalogue = () => {
+const Films = () => {
   const navigate = useNavigate();
   const [films, setFilms] = useState([]);
 
@@ -34,7 +34,9 @@ const Catalogue = () => {
         </div>
         <div className="cards">
           {films.map((film) => (
-            <Card key={film.episode_id} onClick={handleOnClick}>{film}</Card>
+            <Card key={film.episode_id} onClick={handleOnClick}>
+              {film}
+            </Card>
           ))}
         </div>
       </section>
@@ -43,4 +45,4 @@ const Catalogue = () => {
   );
 };
 
-export default Catalogue;
+export default Films;
