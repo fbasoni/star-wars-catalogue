@@ -3,6 +3,7 @@ import Particles from 'react-tsparticles';
 import { loadFull } from 'tsparticles';
 import { useNavigate } from 'react-router-dom';
 
+import Button from '../../components/Button/Button'
 import '../Homepage/Homepage.css';
 import logo from '../../assets/logo.png';
 
@@ -17,16 +18,11 @@ const Homepage = () => {
     await loadFull(main);
   };
 
-  const particlesLoaded = () => {
-  };
-
-
   return (
     <section className="home">
       <Particles
         id="tsparticles"
         init={particlesInit}
-        loaded={particlesLoaded}
         options={{
           background: {
             color: "#000000",
@@ -79,6 +75,7 @@ const Homepage = () => {
       <div onClick={loadCatalogue}>
         <img src={logo} className="App-logo" alt="logo" />
       </div>
+      <Button onClick={loadCatalogue}></Button>
     </section>
   );
 }

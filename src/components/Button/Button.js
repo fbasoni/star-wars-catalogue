@@ -1,12 +1,19 @@
-import styles from './Button.module.css'
+import styles from './Button.module.css';
+import { useNavigate } from 'react-router-dom';
+
 
 const Button = () => {
-    function loadCatalogue() {
-  }
+  const navigate = useNavigate();
+
+  const loadCatalogue = () => {
+    navigate('/films');
+  };
+
   return (
-    <button onClick={loadCatalogue} className={styles.button}>
-      Enter
-    </button>
+    <div className={styles.btnWrap}>
+      <button onClick={loadCatalogue} className={styles.loadButton}>Enter
+      </button>
+    </div>
   );
 }
 export default Button

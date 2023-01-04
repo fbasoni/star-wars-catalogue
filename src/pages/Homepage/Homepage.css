@@ -9,7 +9,7 @@
 
 
 .App-logo {
-  height: 24rem;
+  height: 20rem;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -31,4 +31,11 @@
 
 .App-logo:hover {
   cursor: pointer;
+}
+
+.click-btn {
+  color: white;
+  background-color: red;
+  position: absolute;
+  margin-top: 3rem;
 }
