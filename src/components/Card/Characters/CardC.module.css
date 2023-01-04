@@ -1,4 +1,113 @@
 .characterCard {
-  background-color: red;
-  height: 20vh;
+  background: rgba(21, 21, 21, 0.592);
+  border-radius: 15px;
+  width: 23vw;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem 1rem 1rem;
+}
+
+.characterCard:hover {
+  transition: all 0.5s ease;
+  transform: scale(1.2);
+  border: none;
+}
+
+.characterName {
+  align-self: center;
+  color:#FCBF06;
+}
+
+.characterDescription {
+  list-style: none;
+}
+
+.cardHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.saber {
+  position: relative;
+  width: 11px;
+  height: 23vh;
+  margin-top: -2rem;
+  margin-left: -3rem;
+  margin-right: 12rem;
+  margin-bottom: -8rem;
+  background-color: rgb(255, 208, 0);
+  border-radius: 6px;
+  box-shadow: 0px 0px 10px, 0px 0px 2px inset;
+  animation: glow 1.5s linear infinite;
+}
+
+.saber::before {
+  content: '';
+  position: absolute;
+  top: 90%;
+  right: -40%;
+  height: 8vh;
+  width: 20px;
+  background-image:
+    linear-gradient(to right,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.7) 25%,
+      rgba(255, 255, 255, 0.2) 37.5%,
+      rgba(128, 128, 128, 0.5) 100%),
+    linear-gradient(to bottom,
+      gray 0, gray 10%,
+      black 10%, black 12%,
+      gray 12%, gray 15%,
+      black 15%, black 17%,
+      gray 17%, gray 19%,
+      black 19%, black 21%,
+      gray 21%, gray 23%,
+      black 23%, black 25%,
+      gray 25%, gray 45%,
+      black 45%, black 55%,
+      transparent 55%, transparent 95%,
+      black 95%, silver),
+    linear-gradient(to right,
+      gray 0%, gray 12.5%,
+      black 12.5%, black 25%,
+      silver 37.5%, silver 37.5%,
+      gray 37.5%, gray 62.5%,
+      black 62.5%, grey 75%,
+      silver 75%, silver 87.5%,
+      gray 87.5%, gray 100%);
+}
+
+.saber::after {
+  content: '';
+  position: absolute;
+  top: 105%;
+  right: 0;
+  left: 0;
+  height: 10px;
+  width: 10px;
+  background-image:
+    radial-gradient(ellipse,
+      red 0%, black 60%,
+      transparent 60%, transparent);
+}
+
+@keyframes glow {
+  from {
+    color: rgb(241, 204, 38);
+    box-shadow: 0 0 9px rgb(255, 238, 162);
+  }
+
+  50% {
+    color: rgb(252, 218, 67);
+    box-shadow: 0 0 9px rgb(211, 127, 0);
+  }
+
+  to {
+    color: rgb(241, 205, 41);
+    box-shadow: 0 0 9px rgb(255, 255, 255);
+  }
 }
